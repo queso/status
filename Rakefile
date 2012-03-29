@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Gaslight::Application.load_tasks
+Spark::Application.load_tasks

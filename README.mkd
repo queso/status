@@ -1,7 +1,9 @@
 ## Gaslight Spark
 
-* compass
-* Zurb Foundation
+A starting point for Rails work.
+
+* [Compass](http://compass-style.org)
+* [Zurb Foundation](http://foundation.zurb.com)
 * Layout with sidebar
-* Purty background
+* Purty background from [Subtle Patterns](http://subtlepatterns.com/)
 
