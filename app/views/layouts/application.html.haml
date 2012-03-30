@@ -11,6 +11,12 @@
     %header.row
       .columns.twelve
         %h1 Hi! This is the header.
+    - if flash
+      #flash.row
+        - flash.each do |level, message|
+          .flash.alert-box{class: level}
+            = message
+            %a.close{href: ""} &times;
     #main.row
       .columns{class: content_for?(:sidebar) ? 'eight' : 'twelve'}
         = yield
