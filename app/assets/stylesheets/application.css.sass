@@ -1,10 +1,16 @@
-@import 'ZURB-foundation'
+@import 'compass'
+@import 'foundation'
 
 body
   background-image: url(wood_pattern.png)
 
 h1, h2, h3, h4, h5, h6
   font-family: "Podkova", "Helvetica Neue", "Helvetica", Arial, sans-serif
+
+form
+  @extend .nice
+  input[type=text]
+    @extend .input-text
 
 .container
   max-width: 1000px
