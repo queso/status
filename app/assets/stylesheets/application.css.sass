@@ -7,10 +7,21 @@ body
 h1, h2, h3, h4, h5, h6
   font-family: "Podkova", "Helvetica Neue", "Helvetica", Arial, sans-serif
 
+pre, code
+  font-family: Inconsolota, Menlo, Monaco, fixed
+
+code
+  background-color: black
+  color: green
+  line-height: 1.5em
+
 form
   @extend .nice
   input[type=text]
     @extend .input-text
+  input[type=submit]
+    @extend .nice
+    @extend .button
 
 .container
   max-width: 1000px
