@@ -22,3 +22,9 @@ group :development, :test do
   gem "rspec-rails"
   gem "rspec-given"
 end
+
+group :test do
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'launchy'
+end
