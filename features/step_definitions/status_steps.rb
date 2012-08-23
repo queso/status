@@ -1,5 +1,5 @@
 Given /^a status of up with message of "([^"]*)"$/ do |message|
-  Status.create(up: true, message: message)
+  Status.create(status: "up", message: message)
 end
 
 When /^I visit the status page$/ do
@@ -12,7 +12,8 @@ end
 
 Given /^(\d+) statuses exist$/ do |number|
   number.to_i.times do |i|
-    Status.create(up: i.even?, message: "Message #{i}")
+    status = i.even? ? "up" : "down"
+    Status.create!(status: status, message: "Message #{i}")
   end
 end
 
