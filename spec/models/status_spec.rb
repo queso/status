@@ -23,7 +23,6 @@ describe Status do
     it "should set up to false if passed down" do
       status = Status.new(status: "down", message: "Our database is b0rked")
       status.up.should be_false
-      puts status.errors.to_a
       status.should be_valid
     end
 

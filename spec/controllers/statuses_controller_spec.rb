@@ -22,7 +22,6 @@ describe StatusesController do
     it "should create a status when just status is given" do
       lambda do
         post_create(status: "DOWN", message: nil)
-        puts response.inspect
       end.should change(Status, :count).by(1)
     end
 
