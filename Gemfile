@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails', '3.2.8'
 gem 'high_voltage'
 gem 'haml'
 gem 'simple_form'
@@ -23,7 +23,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
   gem 'launchy'
   gem 'email_spec'
