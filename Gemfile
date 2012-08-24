@@ -27,4 +27,5 @@ group :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'email_spec'
+  gem 'simplecov', :require => false
 end
