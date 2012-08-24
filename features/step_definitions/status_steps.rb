@@ -17,9 +17,9 @@ Given /^(\d+) statuses exist$/ do |number|
   end
 end
 
-Then /^I should see a top message$/ do
+Then /^I should see a top message numbered "([^"]*)"$/ do |number|
   within('#top_message') do
-    page.should have_content "Message 0"
+    page.should have_content "Message #{number}"
   end
 end
 
@@ -28,7 +28,7 @@ Then /^I should see (\d+) older messages$/ do |number|
     all('li').size.should == number.to_i
     (1..number.to_i).each do |i|
       within("#status_#{i - 1}") do
-        page.should have_content "Message #{i}"
+        page.should have_content "Message #{(number.to_i + 1) - i}"
       end
     end
   end

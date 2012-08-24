@@ -11,5 +11,5 @@ Feature:
   Scenario: Show the last 10 messages
     Given 12 statuses exist
     When I visit the status page
-    Then I should see a top message
+    Then I should see a top message numbered "11"
     And I should see 10 older messages
