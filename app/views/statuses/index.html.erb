@@ -1,4 +1,4 @@
-<h2 id="top_message" class="<%= @first_status.up? ? 'up' : 'down' %>"><%= @first_status.message %></h2>
+<h2 id="top_message" class="<%= @first_status.status %>"><%= @first_status.message %></h2>
 <ul id="older_messages">
   <%= render partial: @older_statuses %>
 </ul>
